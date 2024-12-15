@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://lawyerwebsite-synv.onrender.com/sitemap.xml
+Host: https://lawyerwebsite-synv.onrender.com
