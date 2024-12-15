@@ -58,10 +58,12 @@ app.get("/test", (req, res) => {
   `);
 });
 
+// Serve static files from the Backend/dist folder
 app.use(express.static(path.join(__dirname, "dist")));
 
+// Serve index.html for any route that doesn't match a static file
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "dist/index.html"));
+  res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
 
 // Start the server
