@@ -59,7 +59,7 @@ app.get("/test", (req, res) => {
 });
 
 // Serve static files from the frontend build
-app.use(express.static(path.join(__dirname, "../Frontend/dist")));
+app.use(express.static(path.join(process.cwd(), "Frontend", "dist")));
 
 // Serve the frontend on all other routes
 app.get("*", (req, res) => {
