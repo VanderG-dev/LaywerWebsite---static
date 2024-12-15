@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./assets/header.css">
     <link rel="icon" type="image/svg+xml" href="./favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Бесплатная юридическая консультация в Нижнем Новгороде" />
@@ -21,5 +22,30 @@
     />
     <title>Бесплатная юридическая консультация в Нижнем Новгороде</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div className="header-container">
+        <nav className="nav-box">
+          <ul className="nav-list">
+            <li>
+              <Link to="/">
+                <button className="nav-button" aria-label="Go to Khlystov Group homepage">
+                  <img src="/logo.jpg" alt="logo" width="48px" className="logo mr-2" />
+                  <span className="nav-text">Юридическая компания</span>
+                </button>
+              </Link>
+            </li>
+          </ul>
+        </nav>
+
+        <div className="second-nav-box">
+          <img src="/icons/Nav/call.png" alt="call" width="32px" className="phone-number" />
+          <a href="tel:+79524616931" className="nav-text">
+            +7 (952) 461-69-31
+          </a>
+        </div>
+      </div>
+    </header>
+
+  </body>
 </html>
