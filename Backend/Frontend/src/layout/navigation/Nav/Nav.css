@@ -1,0 +1,17 @@
+.content-box-white {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 100%;
+  padding: 0px;
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
